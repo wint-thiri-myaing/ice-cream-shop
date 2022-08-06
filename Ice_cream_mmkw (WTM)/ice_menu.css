@@ -1,0 +1,219 @@
+* {
+    font-family: 'SCRIPTBL';
+}
+
+@font-face {
+    font-family: 'SCRIPTBL';
+    src: url('font/SCRIPTBL.TTF');
+}
+
+a {
+    text-decoration: none;
+    color: rgb(13, 17, 153);
+}
+
+body {
+    width: 100%;
+    height: auto;
+}
+
+#ice_menu {
+    margin-top: 70px;
+}
+
+.item {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.menu_item {
+    width: 320px;
+    height: 250px;
+    display: inline-block;
+}
+
+.image {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.image img {
+    width: fit-content;
+    padding-left: 5%;
+    display: inline-block;
+}
+
+#caption {
+    width: 300px;
+    height: 90px;
+    text-align: center;
+    display: inline-block;
+    background-image: url("Images/ice-cream-label.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#text1 {
+    color: rgb(9, 14, 143);
+    text-align: center;
+    padding-top: 12px;
+    font-size: 24px;
+    font-weight: normal;
+    width: 100%;
+    height: 60%;
+}
+
+.tooltip {
+    float: right;
+    margin: 2px 0;
+    visibility: hidden;
+    text-align: center;
+    background-color: orange;
+    color: #fff;
+    width: 52px;
+    height: 52px;
+    border: 3px solid white;
+    border-radius: 50%;
+    line-height: 52px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+    /* .menuandtext {
+        width: 100px;
+        height: 100px;
+    }
+    .menuandtext h1 {
+        font-size: 20px;
+    } */
+    .item {
+        width: 100%;
+        margin: 0px;
+        margin: 0%;
+        padding: 0%;
+    }
+    .menu_item {
+        width: 30%;
+        height: 5px;
+        display: inline-block;
+    }
+    .image img {
+        width: inherit;
+        padding: 0%;
+        /* display: inline-block; */
+    }
+    #caption {
+        width: 100px;
+        height: 60px;
+    }
+    #text1 {
+        font-size: 10px;
+        padding-top: 2px;
+    }
+    .tooltip {
+        width: 28px;
+        height: 28px;
+        line-height: 28px;
+        margin: 0%;
+    }
+    /* .menuandtext {
+        margin-top: 10px;
+    } */
+    #ice_menu {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    /* .menuandtext {
+        width: 160px;
+        height: 160px;
+    }
+    .menuandtext h1 {
+        font-size: 24px;
+    } */
+    .item {
+        margin: 0px;
+        margin: 0%;
+        padding: 0%;
+    }
+    .menu_item {
+        width: 30%;
+        height: 15px;
+        display: inline-block;
+    }
+    .image img {
+        width: 100%;
+        padding: 0%;
+    }
+    #caption {
+        width: 220px;
+        height: 160px;
+    }
+    #text1 {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    .tooltip {
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        margin: 0%;
+    }
+    /* .menuandtext {
+        margin-top: 10px;
+    } */
+}
+
+@media only screen and (min-width: 600px) {
+    #caption {
+        width: 182px;
+    }
+    #text1 {
+        padding-top: 5px;
+    }
+    #form_left {
+        width: 300px;
+    }
+    #form_left img {
+        width: 280px;
+    }
+    #form_right {
+        width: 250px;
+        margin-left: 2px;
+    }
+}
+
+@media only screen and (min-width: 801px) {
+    .menu_item {
+        width: 230px;
+    }
+    .image img {
+        width: 230px;
+        padding-left: 5%;
+    }
+    #caption {
+        width: 210px;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .menu_item {
+        width: 320px;
+    }
+}
+
+@media only screen and (min-width: 1281px) {
+    .menu_item {
+        width: 350px;
+    }
+    
+    .image img {
+        width: 330px;
+        padding-left: 5%;
+    }
+    #caption {
+        width: 250px;
+    }
+}

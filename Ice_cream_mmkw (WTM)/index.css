@@ -1,0 +1,834 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'SCRIPTBL';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'SCRIPTBL';
+    src: url('font/SCRIPTBL.TTF');
+}
+
+body {
+    margin: 0;
+    background-image: url("Images/wafer.png");
+}
+
+.one_page_nav {
+    top: 0;
+    position: fixed;
+    overflow: initial;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(150, 224, 253);
+    font-size: 24px;
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.5);
+    float: left;
+}
+
+.left_menu {
+    display: block;
+    float: left;
+    list-style: none;
+    width: 70%;
+    height: inherit;
+    text-align: center;
+    /* padding-left: 50px; */
+    /* display: none; */
+}
+
+a {
+    text-decoration: none;
+    color: rgb(13, 17, 153);
+}
+
+.left_menu li {
+    float: left;
+    height: inherit;
+    line-height: 50px;
+    display: block;
+}
+
+.about_menu {
+    width: 18%;
+}
+
+.menu {
+    width: 10%;
+}
+
+.where_menu {
+    width: 22%;
+}
+
+.textmenu {
+    width: 9.00%;
+    margin-left: 8%;
+}
+
+.left_menu li img {
+    height: 170px;
+    width: 100%;
+    margin-top: 2px;
+}
+
+.left_menu li :hover {
+    color: black;
+}
+
+.social {
+    float: left;
+    list-style: none;
+    width: 30%;
+    height: inherit;
+    text-align: center;
+}
+
+.social li {
+    float: left;
+    width: 20.00%;
+    text-align: center;
+    line-height: 50px;
+    margin-left: 5px;
+}
+
+.social li :hover {
+    color: black;
+}
+
+.body {
+    /* position: static; */
+    margin: auto;
+    width: 100%;
+    /* height: inherit; */
+}
+
+#home {
+    height: 585px;
+    width: fit-content;
+    margin: 0 auto;
+    padding-top: 90px;
+}
+
+.ice_cream {
+    float: left;
+}
+
+.splashandtext {
+    background-repeat: no-repeat;
+    width: 550px;
+    height: 550px;
+    overflow: hidden;
+    color: rgb(13, 17, 153);
+    float: left;
+    margin-left: 30px;
+    background-image: url("Images/splash.png");
+}
+
+.text {
+    /* position: relative; */
+    padding-top: 38%;
+    /* left: 50%; */
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    font-size: 24px;
+    /* transform: translate(-50%,-50%); */
+}
+
+#about_us {
+    height: 280px;
+    text-align: center;
+    width: fit-content;
+    background-color: rgb(247, 240, 242);
+    color: firebrick;
+    padding: 50px 70px 80px 50px;
+    margin: 0 auto;
+    /* border-radius: 10px 10px; */
+}
+
+#about_us h1 {
+    text-align: center;
+    font-weight: normal;
+}
+
+#about_us p {
+    margin-top: 60px;
+    font-size: 24px;
+}
+
+.menuandtext {
+    width: 175px;
+    height: 175px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-image: url("Images/menu-board.png");
+    background-size: contain;
+    margin-top: 120px;
+}
+
+.menuandtext h1 {
+    padding-top: 50%;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    font-weight: normal;
+}
+
+#contactus {
+    width: fit-content;
+    height: 464px;
+    margin: 60px auto;
+    background-color: rgb(247, 240, 242);
+    /* position: initial; */
+    margin-top: 100px;
+}
+
+/* Dialog */
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.8;
+    display: none;
+}
+
+#dialog {
+    position: absolute;
+    top: 16%;
+    left: 35%;
+    width: 350px;
+    /* border: 1px solid #ccc; */
+    background: #fff;
+    display: none;
+}
+
+#dialog p {
+    height: 20px;
+    font-weight: normal;
+}
+
+#dialog .bottom {
+    width: 100%;
+    height: 90px;
+    background-color: #ccc;
+}
+
+#dialog input[type=submit] {
+    padding: 5px 30px;
+    margin-right: 30px;
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 2px solid #22bbf8;
+}
+
+#contactus h1 {
+    text-align: center;
+    font-weight: normal;
+    color: firebrick;
+    padding: 60px 0px 30px 0px;
+}
+
+#form_wrapper {
+    width: 100%;
+    padding-left: 10%;
+}
+
+#form_left {
+    /* center the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+#form_left img {
+    width: 500px;
+    height: 230px;
+}
+
+#form_right {
+    width: 400px;
+    text-align: center;
+    float: left;
+    margin-left: 120px;
+}
+
+.input_container {
+    background-color: white;
+    /* vertically align icon and text inside the div*/
+    display: flex;
+    align-items: center;
+}
+
+#name_field {
+    width: 50%;
+}
+
+#email_field {
+    width: 50%;
+    margin-top: 15px;
+}
+
+.input_container, #input_submit {
+    height: 30px;
+    /* make the borders more round */
+    border: 1px solid firebrick;
+}
+
+.input_field {
+    /* customize the input tag with lighter font and some padding*/
+    background-color: inherit;
+    width: 100%;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-left: 10px;
+    color: rgb(9, 9, 105);
+}
+
+.input_field:hover, .input_field:focus {
+    /* remove the outline */
+    outline: none;
+}
+
+.submit_container {
+    display: flex;
+    align-items: center;
+}
+
+#input_submit {
+    /* submit button has a different color and different padding */
+    background-color: #9edeff;
+    /* padding-left: 0; */
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    width: 50%;
+    color: rgb(6, 6, 136);
+}
+
+#input_submit:hover {
+    /* simple color transition on hover */
+    transition: background-color, 0.5s;
+    cursor: pointer;
+    background-color: #185f76;
+    color: #9edeff;
+}
+
+.message {
+    align-items: center;
+    width: 50%;
+    margin-top: 15px;
+}
+
+textarea {
+    font-size: 24px;
+    color: rgb(9, 9, 105);
+    padding-left: 10px;
+}
+
+::placeholder {
+    color: firebrick;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: firebrick;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: firebrick;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(150, 224, 253);
+    font-size: 24px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: rgb(13, 17, 153);
+    line-height: 50px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+    .one_page_nav {
+        position: fixed;
+        overflow: initial;
+        font-size: 12px;
+        height: 30px;
+        width: 100%;
+    }
+    .left_menu {
+        width: 80%;
+    }
+    .left_menu li {
+        height: inherit;
+        line-height: 20px;
+        padding-top: 1%;
+        text-align: center;
+    }
+    .left_menu li.dot {
+        display: none;
+    }
+    .about_menu {
+        width: 21%;
+        padding-left: 10%;
+    }
+    .menu {
+        width: 5%;
+        padding-left: 3%;
+    }
+    .where_menu {
+        width: 30%;
+        padding-left: 10%;
+    }
+    .textmenu {
+        width: 7.00%;
+    }
+    .left_menu li img {
+        height: 70px;
+        width: 35px;
+        margin-top: 1px;
+        margin-left: 0%;
+        padding-left: 0%;
+    }
+    .social {
+        width: 20%;
+    }
+    .social li {
+        /* float: none; */
+        display: block;
+        margin: 0%;
+        width: 18%;
+        margin-left: 12%;
+        height: 25%;
+        line-height: 25px;
+    }
+    .body {
+        width: 100%;
+        height: 1280px;
+    }
+    #home {
+        height: 300px;
+        width: 100%;
+        float: none;
+    }
+    .ice_cream {
+        width: 25%;
+        height: 200px;
+        margin-left: 10%;
+    }
+    .splashandtext {
+        width: 60%;
+        height: 200px;
+        margin-left: 10px;
+        background-size: contain;
+    }
+    .text {
+        padding-top: 35%;
+        text-align: center;
+        font-size: 12px;
+    }
+    #about_us {
+        height: 120px;
+        padding: 0%;
+    }
+    #about_us h1 {
+        font-size: 18px;
+    }
+    #about_us p {
+        margin-top: 30px;
+        font-size: 8px;
+    }
+    .menuandtext {
+        width: 120px;
+        height: 120px;
+        /*margin: 0 auto;
+        background-repeat: no-repeat;
+        background-image: url("Images/menu-board.png");
+        background-size: contain; */
+        margin-top: 10px;
+    }
+    .menuandtext h1 {
+        padding-top: 50%;
+        /* text-align: center;
+        color: white;
+        text-shadow: 2px 2px 3px black;
+        font-weight: normal; */
+    }
+    #contactus {
+        height: 230px;
+        width: 100%;
+        margin: 0%;
+        margin-top: 70px;
+    }
+    #contactus h1 {
+        padding: 5px 0 15px 0;
+        font-size: 18px;
+    }
+    #form_wrapper {
+        padding: 0px;
+        padding: 0%;
+        margin: 0%;
+        margin-left: 5px;
+    }
+    #form_left {
+        display: block;
+        width: 180px;
+    }
+    #form_left img {
+        width: 100%;
+        height: 150px;
+    }
+    #form_right {
+        width: 130px;
+        margin-left: 10px;
+    }
+    #name_field {
+        width: 90%;
+    }
+    #email_field {
+        width: 90%;
+        margin-top: 8px;
+    }
+    .input_container, #input_submit {
+        height: 18px;
+    }
+    .input_field {
+        font-size: 0.9rem;
+        font-weight: 200;
+        padding-left: 5px;
+    }
+    .message {
+        width: 86%;
+        margin-top: 5px;
+    }
+    textarea {
+        width: 100%;
+        font-size: 14px;
+        padding-left: 5px;
+    }
+    #input_submit {
+        width: 90%;
+        margin-top: 3px;
+    }
+    footer {
+        width: 100%;
+        height: 30px;
+        font-size: 18px;
+        margin-top: 90px;
+        line-height: 30px;
+    }
+    #ice_menu {
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width: 850px) {
+    .one_page_nav {
+        position: fixed;
+        overflow: initial;
+        font-size: 24px;
+        width: 100%;
+    }
+    .left_menu {
+        width: 75%;
+    }
+    .social {
+        width: 25%;
+    }
+    .about_menu {
+        width: 20%;
+        /* padding-left: 10%; */
+    }
+    .menu {
+        width: 5%;
+        /* padding-left: 2%; */
+    }
+    .where_menu {
+        width: 25%;
+        padding-left: 10%;
+    }
+    .left_menu li.dot {
+        display: none;
+    }
+    .textmenu {
+        width: 8.00%;
+    }
+    .left_menu li img {
+        height: 100px;
+        margin-top: 2px;
+    }
+    .social li {
+        display: block;
+        margin: 0%;
+        width: 18%;
+        margin-left: 12%;
+        height: 25%;
+    }
+    .body {
+        width: 100%;
+        height: 2100px;
+    }
+    #home {
+        height: 400px;
+        width: 100%;
+        float: none;
+    }
+    .ice_cream {
+        width: 25%;
+        height: 400px;
+        margin-left: 10%;
+    }
+    .splashandtext {
+        width: 60%;
+        height: 400px;
+        margin-left: 10px;
+        background-size: contain;
+    }
+    .text {
+        padding-top: 35%;
+        text-align: center;
+        font-size: 24px;
+    }
+    #about_us {
+        height: 250px;
+        padding: 0%;
+    }
+    #about_us h1 {
+        font-size: 24px;
+    }
+    #about_us p {
+        margin-top: 30px;
+        font-size: 20px;
+        padding: 5px;
+    }
+    .menuandtext {
+        /*  width: 175px;
+        height: 175px;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-image: url("Images/menu-board.png");
+        background-size: contain; */
+        margin-top: 30px;
+    }
+    .menuandtext h1 {
+        padding-top: 55%;
+        /* font-size: 22px; */
+        /* text-align: center;
+        color: white;
+        text-shadow: 2px 2px 3px black;
+        font-weight: normal; */
+    }
+    #contactus {
+        height: 430px;
+        width: 100%;
+        margin: 0%;
+        margin-top: 70px;
+    }
+    #contactus h1 {
+        padding: 25px 0 25px 0;
+        font-size: 24px;
+    }
+    #form_wrapper {
+        padding: 0px;
+        padding: 0%;
+        margin: 0%;
+        margin-left: 25px;
+    }
+    #form_left {
+        display: block;
+        width: 400px;
+    }
+    #form_left img {
+        width: 100%;
+        height: 250px;
+    }
+    #form_right {
+        width: 320px;
+        margin-left: 20px;
+    }
+    #name_field {
+        width: 90%;
+    }
+    #email_field {
+        width: 90%;
+        margin-top: 12px;
+    }
+    .input_container, #input_submit {
+        height: 40px;
+    }
+    .input_field {
+        font-size: 1.2rem;
+        font-weight: 200;
+        padding-left: 5px;
+    }
+    .message {
+        width: 89%;
+        margin-top: 10px;
+    }
+    textarea {
+        width: 100%;
+        font-size: 19px;
+        padding-left: 5px;
+    }
+    #input_submit {
+        width: 90%;
+        margin-top: 10px;
+    }
+    footer {
+        font-size: 18px;
+    }
+    #ice_menu {
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1500px) {
+    /* .body {
+        height: 2600px;
+    } */
+    .left_menu {
+        width: 75%;
+    }
+    .social {
+        width: 20%;
+    }
+    .where_menu {
+        width: 20%;
+    }
+    .left_menu li.dot {
+        display: none;
+    }
+    .menuandtext {
+        margin-top: 120px;
+    }
+    #ice_menu {
+        margin-top: 110px;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .text {
+        padding-top: 90px;
+        padding-right: 50px;
+    }
+    footer {
+        margin-top: 120px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .left_menu {
+        width: 85%;
+    }
+    .where_menu {
+        width: 30%;
+    }
+    .text {
+        padding-top: 34%;
+        padding-left: 30px;
+    }
+    .menuandtext {
+        margin-top: 3px;
+    }
+    .body {
+        height: 2000px;
+    }
+    footer {
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (min-width: 801px) {
+    .menuandtext {
+        margin-top: 35px;
+    }
+    #form_left {
+        width: 400px;
+        margin-left: 50px;
+    }
+    #form_left img {
+        width: 350px;
+    }
+    #form_right {
+        width: 300px;
+        margin-left: 50px;
+    }
+    .body {
+        height: 2050px;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .body {
+        height: 2550px;
+    }
+    .menuandtext {
+        margin-top: 93px;
+    }
+    #form_wrapper {
+        width: 600px;
+        padding-left: 30px;
+    }
+    #form_left {
+        margin-left: 20px;
+    }
+    #form_left img {
+        height: 275px;
+    }
+    #form_right {
+        margin-left: 300px;
+    }
+    #name_field, #email_field {
+        width: 180.4px;
+    }
+    #input_submit {
+        width: 180.4px;
+    }
+}
+
+@media only screen and (min-width: 1281px) {
+    #contactus {
+        width: 900px;
+    }
+    #form_wrapper {
+        width: 900px;
+        padding-left: 30px;
+    }
+    #form_left {
+        width: 450px;
+        margin-left: 50px;
+    }
+    #form_left img {
+        height: 275px;
+    }
+    #form_right {
+        margin-left: 50px;
+    }
+    #name_field, #email_field {
+        width: 180.4px;
+    }
+    #input_submit {
+        width: 180.4px;
+    }
+    .body{
+        height: 2800px;
+    }
+}
